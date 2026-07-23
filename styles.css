@@ -1,0 +1,146 @@
+:root{
+  --navy:#102b3f;
+  --navy-2:#173d57;
+  --sage:#7f9989;
+  --cream:#f7f2e8;
+  --gold:#b7975b;
+  --ink:#20303a;
+  --white:#ffffff;
+  --line:rgba(16,43,63,.14);
+  --shadow:0 24px 70px rgba(16,43,63,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--white);
+  font-family:Inter,Arial,sans-serif;
+  line-height:1.65;
+}
+a{color:inherit}
+.container{width:min(1160px,calc(100% - 40px));margin:auto}
+.narrow{width:min(820px,100%);text-align:center}
+.site-header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-wrap{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+.brand-mark{
+  width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;
+  background:var(--navy);color:var(--cream);
+  font-family:"Cormorant Garamond",serif;font-size:20px;font-weight:700
+}
+.brand strong{display:block;font-family:"Cormorant Garamond",serif;font-size:24px;line-height:1}
+.brand small{text-transform:uppercase;letter-spacing:.22em;font-size:10px}
+.nav{display:flex;gap:26px}
+.nav a{text-decoration:none;font-size:14px;font-weight:600;color:var(--navy)}
+.button{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:52px;padding:0 24px;border-radius:999px;
+  background:var(--navy);color:var(--white);
+  text-decoration:none;font-weight:700;
+  box-shadow:0 10px 24px rgba(16,43,63,.16);
+  transition:.2s ease;
+}
+.button:hover{transform:translateY(-2px)}
+.button-small{min-height:42px;padding:0 18px;font-size:14px}
+.button-secondary{background:transparent;color:var(--navy);border:1px solid var(--navy);box-shadow:none}
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,var(--cream),#eef4f1);
+  padding:110px 0 100px;
+}
+.hero-grid{display:grid;grid-template-columns:1.35fr .75fr;gap:70px;align-items:center}
+.hero-copy{position:relative;z-index:2}
+.eyebrow{
+  margin:0 0 16px;color:var(--gold);
+  text-transform:uppercase;letter-spacing:.2em;
+  font-size:12px;font-weight:800;
+}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;color:var(--navy);line-height:1.08;margin-top:0}
+h1{font-size:clamp(48px,7vw,84px);letter-spacing:-.03em;margin-bottom:24px}
+h2{font-size:clamp(38px,5vw,58px);letter-spacing:-.02em;margin-bottom:22px}
+h3{font-size:28px;margin-bottom:10px}
+.hero-lead{font-size:20px;max-width:680px;margin-bottom:34px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.trust-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.trust-row span{
+  padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.7);
+  border:1px solid rgba(16,43,63,.12);font-size:13px;font-weight:700;color:var(--navy)
+}
+.hero-card{
+  position:relative;z-index:2;
+  background:rgba(255,255,255,.88);
+  border:1px solid rgba(255,255,255,.8);
+  border-radius:28px;padding:38px;
+  box-shadow:var(--shadow)
+}
+.hero-card h2{font-size:38px}
+.hero-card a{display:block;color:var(--navy);font-weight:800;text-decoration:none;margin-top:12px}
+.card-kicker,.administrator{font-size:13px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:var(--gold)}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.4}
+.hero-orb-one{width:420px;height:420px;background:#d8e6de;right:-120px;top:-100px}
+.hero-orb-two{width:320px;height:320px;background:#e7d9bc;left:-120px;bottom:-160px}
+.section{padding:100px 0}
+.intro{background:var(--white)}
+.intro p:last-child{font-size:19px}
+.services{background:#f8faf9}
+.section-heading{display:grid;grid-template-columns:1fr .7fr;gap:60px;align-items:end;margin-bottom:42px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-card{
+  padding:30px;border-radius:22px;background:var(--white);
+  border:1px solid var(--line);min-height:260px
+}
+.service-card span{color:var(--gold);font-weight:800;font-size:13px;letter-spacing:.14em}
+.difference{background:var(--navy);color:#e8eef1}
+.difference h2,.difference h3{color:var(--white)}
+.difference-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+.difference-list{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.difference-list div{padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.14)}
+.admissions-card{
+  background:var(--cream);border-radius:34px;padding:56px;
+  display:grid;grid-template-columns:1fr 1fr;gap:70px
+}
+.admissions-steps{display:grid;gap:14px}
+.admissions-steps div{
+  display:flex;align-items:center;gap:15px;
+  background:var(--white);padding:16px 18px;border-radius:16px
+}
+.admissions-steps strong{
+  width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  background:var(--navy);color:var(--white)
+}
+.contact{background:#eef4f1}
+.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}
+.contact-card{
+  background:var(--white);padding:36px;border-radius:24px;
+  box-shadow:var(--shadow)
+}
+.contact-card>a:not(.button){display:block;text-decoration:none;color:var(--navy);font-weight:800;margin:10px 0}
+.contact-card .button{margin-top:18px}
+footer{background:#0b2232;color:#dfe8ec;padding:56px 0 28px}
+.footer-grid{display:flex;justify-content:space-between;gap:40px}
+.footer-grid strong{font-family:"Cormorant Garamond",serif;font-size:28px;color:var(--white)}
+.footer-grid a{display:block;text-decoration:none;margin-bottom:8px}
+.legal{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:12px;color:#aebdc5}
+@media(max-width:900px){
+  .nav{display:none}
+  .hero-grid,.section-heading,.difference-grid,.admissions-card,.contact-grid{grid-template-columns:1fr}
+  .service-grid{grid-template-columns:1fr 1fr}
+  .hero{padding-top:80px}
+}
+@media(max-width:620px){
+  .container{width:min(100% - 24px,1160px)}
+  .site-header .button-small{display:none}
+  .hero{padding:68px 0}
+  .section{padding:72px 0}
+  .service-grid,.difference-list{grid-template-columns:1fr}
+  .admissions-card{padding:28px}
+  .hero-card{padding:28px}
+  .footer-grid{flex-direction:column}
+}
