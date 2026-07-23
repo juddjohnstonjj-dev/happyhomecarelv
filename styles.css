@@ -1,20 +1,20 @@
 :root{
-  --navy:#102b3f;
-  --navy-2:#173d57;
-  --sage:#7f9989;
-  --cream:#f7f2e8;
-  --gold:#b7975b;
-  --ink:#20303a;
+  --navy:#244f68;
+  --navy-2:#3e6f86;
+  --sage:#91a68f;
+  --cream:#fbf6ec;
+  --gold:#b99b6b;
+  --ink:#31424a;
   --white:#ffffff;
-  --line:rgba(16,43,63,.14);
-  --shadow:0 24px 70px rgba(16,43,63,.14);
+  --line:rgba(36,79,104,.13);
+  --shadow:0 24px 70px rgba(71,95,102,.12);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
   margin:0;
   color:var(--ink);
-  background:var(--white);
+  background:#fffdf8;
   font-family:Inter,Arial,sans-serif;
   line-height:1.65;
 }
@@ -23,7 +23,7 @@ a{color:inherit}
 .narrow{width:min(820px,100%);text-align:center}
 .site-header{
   position:sticky;top:0;z-index:20;
-  background:rgba(255,255,255,.92);
+  background:rgba(251,248,241,.94);
   backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);
 }
@@ -52,7 +52,7 @@ a{color:inherit}
 .button-secondary{background:transparent;color:var(--navy);border:1px solid var(--navy);box-shadow:none}
 .hero{
   position:relative;overflow:hidden;
-  background:linear-gradient(135deg,var(--cream),#eef4f1);
+  background:linear-gradient(135deg,#fbf6ec,#eef3ed 58%,#f3eadc);
   padding:110px 0 100px;
 }
 .hero-grid{display:grid;grid-template-columns:1.35fr .75fr;gap:70px;align-items:center}
@@ -75,7 +75,7 @@ h3{font-size:28px;margin-bottom:10px}
 }
 .hero-card{
   position:relative;z-index:2;
-  background:rgba(255,255,255,.88);
+  background:rgba(255,252,247,.92);
   border:1px solid rgba(255,255,255,.8);
   border-radius:28px;padding:38px;
   box-shadow:var(--shadow)
@@ -84,20 +84,20 @@ h3{font-size:28px;margin-bottom:10px}
 .hero-card a{display:block;color:var(--navy);font-weight:800;text-decoration:none;margin-top:12px}
 .card-kicker,.administrator{font-size:13px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:var(--gold)}
 .hero-orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.4}
-.hero-orb-one{width:420px;height:420px;background:#d8e6de;right:-120px;top:-100px}
-.hero-orb-two{width:320px;height:320px;background:#e7d9bc;left:-120px;bottom:-160px}
+.hero-orb-one{width:420px;height:420px;background:#cfdccd;right:-120px;top:-100px}
+.hero-orb-two{width:320px;height:320px;background:#e5d4b7;left:-120px;bottom:-160px}
 .section{padding:100px 0}
 .intro{background:var(--white)}
 .intro p:last-child{font-size:19px}
-.services{background:#f8faf9}
+.services{background:#f7f4ed}
 .section-heading{display:grid;grid-template-columns:1fr .7fr;gap:60px;align-items:end;margin-bottom:42px}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .service-card{
-  padding:30px;border-radius:22px;background:var(--white);
+  padding:30px;border-radius:22px;background:#fffdf8;
   border:1px solid var(--line);min-height:260px
 }
 .service-card span{color:var(--gold);font-weight:800;font-size:13px;letter-spacing:.14em}
-.difference{background:var(--navy);color:#e8eef1}
+.difference{background:linear-gradient(135deg,#315f76,#416f75);color:#f7f4ed}
 .difference h2,.difference h3{color:var(--white)}
 .difference-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
 .difference-list{display:grid;grid-template-columns:1fr 1fr;gap:28px}
@@ -109,21 +109,21 @@ h3{font-size:28px;margin-bottom:10px}
 .admissions-steps{display:grid;gap:14px}
 .admissions-steps div{
   display:flex;align-items:center;gap:15px;
-  background:var(--white);padding:16px 18px;border-radius:16px
+  background:#fffdf8;padding:16px 18px;border-radius:16px
 }
 .admissions-steps strong{
   width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
   background:var(--navy);color:var(--white)
 }
-.contact{background:#eef4f1}
+.contact{background:#eef3ed}
 .contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}
 .contact-card{
-  background:var(--white);padding:36px;border-radius:24px;
+  background:#fffdf8;padding:36px;border-radius:24px;
   box-shadow:var(--shadow)
 }
 .contact-card>a:not(.button){display:block;text-decoration:none;color:var(--navy);font-weight:800;margin:10px 0}
 .contact-card .button{margin-top:18px}
-footer{background:#0b2232;color:#dfe8ec;padding:56px 0 28px}
+footer{background:#274c5f;color:#f0eee6;padding:56px 0 28px}
 .footer-grid{display:flex;justify-content:space-between;gap:40px}
 .footer-grid strong{font-family:"Cormorant Garamond",serif;font-size:28px;color:var(--white)}
 .footer-grid a{display:block;text-decoration:none;margin-bottom:8px}
